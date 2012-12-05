@@ -1,0 +1,185 @@
+{
+  "name"      : "opt-pilot v0.1",
+  "solutions" : [
+    {
+        "ID": 0,
+        "ode [KeV]":      10.3988,
+        "oex [mm mrad]":  2.23702e-06,
+        "orx [mm]":       0.00129222,
+        "velocity [m/s]": 0.68,
+        "energy [MeV]":   0.004,
+        "rms_z [mm]":     0.001
+    },
+    {
+        "ID": 2,
+        "ode [KeV]":      9.36923,
+        "oex [mm mrad]":  1.70587e-06,
+        "orx [mm]":       0.00132264,
+        "velocity [m/s]": 0.58,
+        "energy [MeV]":   0.024,
+        "rms_z [mm]":     0.003
+    },
+    {
+        "ID":            3,
+        "ode [KeV]":     9.86989,
+        "oex [mm mrad]": 5.36841e-06,
+        "orx [mm]":      0.00130535,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            4,
+        "ode [KeV]":     9.36922,
+        "oex [mm mrad]": 4.82828e-07,
+        "orx [mm]":      0.00132271,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            6,
+        "ode [KeV]":     9.05303,
+        "oex [mm mrad]": 5.95563e-05,
+        "orx [mm]":      0.00132961,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            9,
+        "ode [KeV]":     11.1544,
+        "oex [mm mrad]": 4.11202e-07,
+        "orx [mm]":      0.00129666,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            10,
+        "ode [KeV]":     10.4978,
+        "oex [mm mrad]": 1.40646e-06,
+        "orx [mm]":      0.00129583,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            11,
+        "ode [KeV]":     10.8866,
+        "oex [mm mrad]": 1.17097e-06,
+        "orx [mm]":      0.0012883,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            12,
+        "ode [KeV]":     11.2509,
+        "oex [mm mrad]": 6.9232e-07,
+        "orx [mm]":      0.00128893,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            13,
+        "ode [KeV]":     10.7433,
+        "oex [mm mrad]": 1.16932e-06,
+        "orx [mm]":      0.00129261,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            14,
+        "ode [KeV]":     9.14884,
+        "oex [mm mrad]": 2.89715e-06,
+        "orx [mm]":      0.00133344,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            16,
+        "ode [KeV]":     9.9659,
+        "oex [mm mrad]": 8.74402e-07,
+        "orx [mm]":      0.00130271,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            18,
+        "ode [KeV]":     11.6293,
+        "oex [mm mrad]": 5.88421e-07,
+        "orx [mm]":      0.00128506,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            19,
+        "ode [KeV]":     9.50149,
+        "oex [mm mrad]": 1.14516e-06,
+        "orx [mm]":      0.00131364,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            20,
+        "ode [KeV]":     10.0789,
+        "oex [mm mrad]": 4.91747e-07,
+        "orx [mm]":      0.00130168,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            23,
+        "ode [KeV]":     9.12682,
+        "oex [mm mrad]": 1.76104e-05,
+        "orx [mm]":      0.00133794,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            24,
+        "ode [KeV]":     9.64462,
+        "oex [mm mrad]": 9.20713e-07,
+        "orx [mm]":      0.0013071,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            26,
+        "ode [KeV]":     12.0858,
+        "oex [mm mrad]": 2.83075e-07,
+        "orx [mm]":      0.00129159,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            27,
+        "ode [KeV]":     9.22839,
+        "oex [mm mrad]": 2.06557e-06,
+        "orx [mm]":      0.00132298,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    },
+    {
+        "ID":            28,
+        "ode [KeV]":     9.87027,
+        "oex [mm mrad]": 9.23756e-07,
+        "orx [mm]":      0.00130504,
+        "velocity [m/s]": null,
+        "energy [MeV]": null,
+        "rms_z [mm]": null
+    }
+  ]
+}

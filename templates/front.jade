@@ -1,0 +1,167 @@
+
+div.navbar.navbar-inverse
+  div.navbar-inner
+    div.container
+
+      a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      a.brand(href="#")
+        ="Pareto Front Explorer"
+
+      div.nav-collapse
+        ul.nav
+          li
+            a(href="/about")
+              | About
+
+div.page-header
+  h1= "Visualization"
+    small
+      | server
+
+
+div.tabbable
+  ul.nav.nav-tabs
+    li.active
+      a(href="#tabload", data-toggle="tab")
+        | Load File
+    li
+      a(href="#tabpost", data-toggle="tab")
+        | Parallel Coordinates
+    li
+      a(href="#tabexpl", data-toggle="tab")
+        | 3D Exploration
+
+  div.tab-content
+    div.tab-pane.active(id="tabload")
+      -if (paretoData)
+        p
+          a(href="#tabpost", data-toggle="tab")
+            | Goto data postprocessing
+
+        p
+          a(href="#tabexpl", data-toggle="tab")
+            | Goto data exploration
+
+        div(style="font-size:10pt;")
+          table#paretoData.table.table-striped
+            tbody
+              tr(style="background: #e1e1e1;")
+                td(style="font-weight: bold;")
+                  = headerData[0]
+                td(style="font-weight: bold;")
+                  = headerData[1]
+                td(style="font-weight: bold;")
+                  = headerData[2]
+                td(style="font-weight: bold;")
+                  = headerData[3]
+
+              - for (var row in paretoData)
+                tr
+                  td(width="50px")
+                    =paretoData[row][0]
+                  td(width="150px")
+                    =paretoData[row][1]
+                  td(width="150px")
+                    =paretoData[row][2]
+                  td(width="150px")
+                    =paretoData[row][3]
+
+        input(type='hidden', id='sols', value='#{sols}')
+
+      -else
+        p
+          i
+            | Give us some data to work with!
+
+        br
+        form(action="/#tabpost", method="post", enctype="multipart/form-data")
+          input(size="160", type="file", name="filename")
+          br
+          button.btn.btn-primary(type="submit")
+            | Load
+
+    div.tab-pane(id="tabpost")
+
+      -if (paretoData)
+        h3= "2] Parallel Coordinates"
+
+        div#nav
+          div(class="widget right toggle")
+            input(type="range", min="0", max="1", value="0.2", step="0.01", name="power", list="powers", id="line_opacity")
+            span(id="opacity_level")
+              | 20%
+          div
+            a(href="#", id="shadows", class="right toggle")
+              | Shadows
+          div
+            a(href="#", id="no_ticks", class="right toggle")
+              | Hide Ticks
+
+        br
+
+        div#legend
+        div#parallel
+
+        div#myGrid
+        script(src='/javascript/parallelcoordinates_view.js')
+
+
+    div.tab-pane(id="tabexpl")
+      p
+        | Controls:
+
+      div.operations(style="background: #f1f1f1; padding: 5px; margin-bottom:15px; display:block; width: 550px; margin-left:auto; margin-right:auto; border: 1px solid black; border-radius: 5px;")
+        p
+          | Use
+          select(name="shader")
+            option(value="points")
+                = "Default"
+            option(value="ewa")
+                = "EWA Splatting"
+          |  shader to render
+
+        p(style="color: #ff6600;")
+          | Use
+          select(id="x_data_col")
+            - for (col in headerData)
+              - if(col == 1)
+                option(value=col, selected="yes")
+                  = headerData[col]
+              - else
+                option(value=col)
+                  = headerData[col]
+          |  as column for X axis with scale factor
+          input(type="text", id="x_scale_factor", value="1.0")
+        p(style="color: #0000ff;")
+          | Use
+          select(id="y_data_col")
+            - for (col in headerData)
+              - if(col == 2)
+                option(value=col, selected="yes")
+                  = headerData[col]
+              - else
+                option(value=col)
+                  = headerData[col]
+          |  as column for Y axis with scale factor
+          input(type="text", id="y_scale_factor", value="1.0")
+        p(style="color: #ff0000;")
+          | Use
+          select(id="z_data_col")
+            - for (col in headerData)
+              - if(col == 3)
+                option(value=col, selected="yes")
+                  = headerData[col]
+              - else
+                option(value=col)
+                  = headerData[col]
+          |  as column for Z axis with scale factor
+          input(type="text", id="z_scale_factor", value="1.0")
+
+      div(id="front")
+      script(src='/javascript/3dplot_view.js')
+
+

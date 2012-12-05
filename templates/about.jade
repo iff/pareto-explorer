@@ -1,0 +1,42 @@
+
+div.navbar.navbar-inverse
+  div.navbar-inner
+    div.container
+
+      a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+      a.brand(href="#")
+        ="Pareto Front Explorer"
+
+      div.nav-collapse
+        ul.nav
+          li
+            a(href="/about")
+              | About
+
+div.page-header
+  h1= "About"
+p
+    | The visualizations use the following libraries:
+ul
+  li
+    a(href="http://threejs.org/")= "Three.js"
+  li
+    a(href="http://d3js.org/")= "d3.js"
+  li
+    a(href="https://github.com/mootools/slick")= "slick.js"
+  li
+    a(href="http://jquery.com")= "jQuery"
+  li
+    a(href="http://twitter.github.com/bootstrap/")= "twitter boostrap"
+
+p
+  | and are based on the following examples:
+ul
+  li
+    a(href="http://exposedata.com/parallel/")= "exposedata"
+  li
+    a(href="https://github.com/mrdoob/three.js/blob/master/examples/webgl_custom_attributes_particles.html")= "custom particle attributes"

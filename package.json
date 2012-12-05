@@ -1,0 +1,13 @@
+{
+    "name"    : "pareto-visualization-server",
+    "version" : "0.0.1",
+    "private" : true,
+
+    "dependencies": {
+          "express"       : "2.5.x"
+        , "coffee-script" : "1.2.x"
+        , "jade"          : "0.13.x"
+        , "underscore"    : "1.2.x"
+        , "futures"       : "latest"
+    }
+}
