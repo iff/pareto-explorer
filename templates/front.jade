@@ -50,25 +50,15 @@ div.tabbable
           table#paretoData.table.table-striped
             tbody
               tr(style="background: #e1e1e1;")
-                td(style="font-weight: bold;")
-                  = headerData[0]
-                td(style="font-weight: bold;")
-                  = headerData[1]
-                td(style="font-weight: bold;")
-                  = headerData[2]
-                td(style="font-weight: bold;")
-                  = headerData[3]
+                - for (var header_idx in headerData)
+                  td(style="font-weight: bold;")
+                    = headerData[header_idx]
 
               - for (var row in paretoData)
                 tr
-                  td(width="50px")
-                    =paretoData[row][0]
-                  td(width="150px")
-                    =paretoData[row][1]
-                  td(width="150px")
-                    =paretoData[row][2]
-                  td(width="150px")
-                    =paretoData[row][3]
+                  - for(var datarow_idx in paretoData[row])
+                    td(width="50px")
+                      =paretoData[row][datarow_idx]
 
         input(type='hidden', id='sols', value='#{sols}')
 
