@@ -8,6 +8,12 @@ The following tools are required to get encounter up and running:
  * [npm](http://npmjs.org/) 1.x
  * IE10 developer preview, Firefox 7 or Chrome 14-16 (any later versions may work but it's not guaranteed)
 
+Node.js and npm can e.g. be installed using ports on OSX:
+
+    sudo ports install nodejs
+    curl https://npmjs.org/install.sh | sudo sh
+
+
 ## Howto
 
 
